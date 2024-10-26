@@ -222,6 +222,10 @@ public:
 };
 ---------------------------------------
 
+|| *DAY-6* ||
+
+Q. Remove Element -----
+
 
 class Solution {
 public:
