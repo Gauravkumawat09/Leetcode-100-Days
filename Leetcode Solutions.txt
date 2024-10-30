@@ -396,7 +396,7 @@ public:
 };
 ---------------------------------------
 
-Q. Max Consecutive Ones
+Q. Max Consecutive Ones -------
 
 class Solution {
 public:
@@ -422,7 +422,7 @@ public:
 };
 ----------------------------------------
 
-Q. 
+Q. Maximum Nesting Depth of the Parentheses ------
 
 class Solution {
 public:
