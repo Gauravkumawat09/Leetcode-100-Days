@@ -420,6 +420,33 @@ public:
     return maxCount;
     }
 };
+----------------------------------------
+
+Q. 
+
+class Solution {
+public:
+    int maxDepth(string s) {
+        int n = s.size();
+        int oc = 0;
+        int ans = 0;
+        int i =0;
+        while (i<n)
+        {
+            if(s[i]=='(')
+            {
+                oc++;
+                ans=max(oc,ans);
+            }
+            if(s[i]==')')
+            {
+                oc--;
+            }
+            i++;
+        }
+        return ans;
+    }
+};
 
 
 
