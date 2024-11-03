@@ -604,6 +604,30 @@ public:
 
 Q. Number of Good Pairs ------
 
+class Solution {
+public:
+    int numIdenticalPairs(vector<int>& nums) {
+        int n = nums.size();
+        int count = 0;
+        pair<int,int>p;
+        for(int i = 0; i < n; i++)
+        {
+            for(int j = i+1; j < n; j++)
+            {
+                if(nums[i]==nums[j] && i<j)
+                {
+                p = make_pair(i,j);
+                count++;
+                }
+            }
+        }
+       return count; 
+    }
+};
+--------------------------------------
+
+Q. 
+
 
 
 
