@@ -865,7 +865,7 @@ public:
 };
 -------------------------------------
 
-|| *Day-19* ||
+|| *Day-20* ||
 
 Q. Remove Duplicates from Sorted Array -------- 
 
@@ -894,6 +894,17 @@ public:
 
 Q. Rotate Array -------
 
+class Solution {
+public:
+    void rotate(vector<int>& nums, int k) {
+        int n=nums.size()-1;
+        k=k%nums.size();
+        reverse(nums.begin(),nums.end());
+        reverse(nums.begin(),nums.begin()+k);
+        reverse(nums.begin()+k,nums.end());
+    }
+};
+---------------------------------------
 
 
 
