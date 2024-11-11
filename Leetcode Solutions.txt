@@ -954,5 +954,28 @@ public:
 
 Q. Modify the Matrix -------
 
+class Solution {
+public:
+    vector<vector<int>> modifiedMatrix(vector<vector<int>>& matrix) {
+        int m = matrix.size();
+        int n = matrix[0].size();
+        vector<vector<int>> ans(matrix);
+
+        for(int i = 0; i < n; i++){
+            int max_val = numeric_limits<int>::min();
+            for(int j = 0; j < m; j++){
+                max_val = max(max_val, matrix[j][i]);
+            }
+            for(int j = 0; j < m; j++){
+                if(matrix[j][i] == -1){
+                    ans[j][i] = max_val;
+                }
+            }
+        }
+        return ans;
+    }
+};
+--------------------------------------------
+
 
 
