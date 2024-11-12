@@ -1026,5 +1026,9 @@ public:
 };
 -----------------------------------------------
 
+|| *Day-23* ||
+
+Q. Merge Two 2D Arrays by Summing Values ------ 
+
 
 
