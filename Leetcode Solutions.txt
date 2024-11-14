@@ -1140,3 +1140,5 @@ public:
 };
 -----------------------------------------
 
+Q. Find Missing and Repeated Values ------ 
+
