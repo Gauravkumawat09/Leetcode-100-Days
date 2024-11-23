@@ -1369,7 +1369,7 @@ public:
 -----------------------------
 
 
-|| *Day-32* ||
+|| *Day-33* ||
 
 Q. Valid Mountain Array ----- 
 
@@ -1388,4 +1388,30 @@ public:
 };
 ------------------------------
 
+|| *Day-34* ||
+
 Q. Reverse Vowels of a String ----- 
+
+class Solution {
+public:
+    string reverseVowels(string s) {
+    unordered_set<char> vowels = {'a', 'e' , 'i', 'o','u','A','E','I','O','U'};
+    int n = s.size();
+        int start = 0, end = n-1;
+        while(start<end){
+            while(vowels.find(s[start]) == vowels.end() && start < end){
+            start++;
+            }
+            while(vowels.find(s[end]) == vowels.end() && start < end){
+            end--;
+            }
+            swap(s[start],s[end]);
+            start++;
+            end--;
+        }
+        return s;
+    }
+};
+------------------------------------ 
+
+Q. 
