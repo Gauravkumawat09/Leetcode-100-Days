@@ -1447,7 +1447,7 @@ public:
 }; 
 ---------------------------------
 
-|| *Day-35* ||
+|| *Day-36* ||
 
 Q. Remove Outermost Parentheses -----------
 
@@ -1500,6 +1500,8 @@ public:
     }
 };
 ----------------------------------------
+
+|| *Day-37* ||
 
 Q. Find All Duplicates in an Array ---------
 
