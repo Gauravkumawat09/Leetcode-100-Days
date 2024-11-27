@@ -1521,6 +1521,9 @@ public:
     }
 };
 -----------------------------------------
+|| *Day-38* ||
+
+Q. Reverse Linked List----------
 
 /**
  * Definition for singly-linked list.
@@ -1547,3 +1550,4 @@ public:
         return prev;
     }
 };
+--------------------------------------
