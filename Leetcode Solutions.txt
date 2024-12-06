@@ -1822,6 +1822,8 @@ public:
 };
 -----------------------------------
 
+|| *Day-48* ||
+
 Q. Sum of Unique Elements ---------
 
 class Solution {
@@ -1840,3 +1842,4 @@ public:
         return totalSum;
     }
 };
+-----------------------------------
