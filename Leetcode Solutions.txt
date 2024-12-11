@@ -1919,3 +1919,5 @@ public:
     }
 };
 -----------------------------------------
+
+Q.  Find Target Indices After Sorting Array ------
