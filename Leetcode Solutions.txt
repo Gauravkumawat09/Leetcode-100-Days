@@ -2008,3 +2008,20 @@ public:
 || *Day-56* ||
 
 Q.  Majority Element II --------
+
+class Solution {
+public:
+    vector<int> majorityElement(vector<int>& nums) {
+        int countMajority = nums.size()/3;
+        unordered_map <int,int> map;
+        vector<int>result;
+        for(auto it: nums){
+            map[it]++;
+        }
+        for(auto ele: map){
+            if(ele.second>countMajority)
+            result.push_back(ele.first);
+        }
+        return result;
+    }
+};
