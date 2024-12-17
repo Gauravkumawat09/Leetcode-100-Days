@@ -2027,7 +2027,7 @@ public:
 };
 ----------------------------------------
 
-|| *Day-56* ||
+|| *Day-57* ||
 
 Q.   Duplicate Zeros ---------
 
@@ -2059,4 +2059,31 @@ public:
 };
 ----------------------------------------------
 
+|| *Day-58* ||
+
 Q.   Maximum Population Year -------
+
+class Solution {
+public:
+    int maximumPopulation(vector<vector<int>>& logs) {
+        vector<int>pre(3000);
+        for(auto &it: logs){
+            pre[it[0]]++;
+            pre[it[1]]--;
+        }
+        int maxi = 0;
+        int year = 0;
+        pre[0]=0;
+        for(int i = 1; i < pre.size(); i++){
+            pre[i] += pre[i-1];
+        }
+        for(int i = 1950; i<= 2050; i++){
+            if(pre[i] > maxi){
+                maxi = pre[i];
+                year = i;
+            }
+        }
+        return year;
+    }
+};
+------------------------------------------
