@@ -2091,3 +2091,19 @@ public:
 || *Day-59* ||
 
 Q. Points That Intersect With Cars ---------
+
+class Solution {
+public:
+    int numberOfPoints(vector<vector<int>>& nums) {
+        vector<int> v(100,0);
+        int ans = 0;
+        for(auto it: nums){
+            for(int i = it[0]; i <= it[1]; i++)v[i-1]++;
+        }
+        for(auto e: v){
+            if(e) ans++;
+        }
+        return ans;
+    }
+};
+-------------------------------------------
