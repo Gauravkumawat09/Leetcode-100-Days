@@ -2111,3 +2111,17 @@ public:
 || *Day-60* ||
 
 Q. Sqrt(x) -------
+
+class Solution {
+public:
+    int mySqrt(int x) {
+        int s = 1, e = x;
+        while(s <= e){
+            long long mid = s + (e-s) / 2;
+            long long val = mid  * mid;
+            if (val <= x)s = mid +1;
+            else e = mid - 1;
+        }
+        return e;
+    }
+};
