@@ -2389,6 +2389,8 @@ public:
 };
 ------------------------------------------
 
+|| *Day-71* ||
+
 Q. Count Numbers with Unique Digits-----
 
 class Solution {
