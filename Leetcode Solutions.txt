@@ -2415,6 +2415,8 @@ public:
 };
 ----------------------------------------
 
+|| *Day-72* ||
+
 Q.   Perfect Squares  ---------
 
 class Solution {
