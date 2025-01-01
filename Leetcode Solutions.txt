@@ -2435,3 +2435,20 @@ public:
 ------------------------------------------ 
 
 Q.   Minimum Add to Make Parentheses Valid  ---------
+
+class Solution {
+public:
+    int minAddToMakeValid(string s) {
+        stack<char>check;
+        int count = 0;
+        for(char i : s){
+            if(i == '(')
+            check.push(i);
+            else{
+                if(check.empty()) count++;
+                else check.pop();
+            }
+        }
+        return count + check.size();
+    }
+};
