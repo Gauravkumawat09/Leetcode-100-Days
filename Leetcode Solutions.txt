@@ -2516,3 +2516,5 @@ public:
     }
 };
 -------------------------------------------
+
+Q.   Maximum Score After Splitting a String   ------- 
