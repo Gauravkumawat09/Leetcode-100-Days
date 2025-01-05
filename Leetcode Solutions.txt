@@ -2546,3 +2546,5 @@ public:
     }
 };
 -----------------------------------------
+
+Q. Check if the Sentence Is Pangram
