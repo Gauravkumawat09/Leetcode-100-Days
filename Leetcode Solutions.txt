@@ -2549,7 +2549,7 @@ public:
 
 || *Day-77* ||
 
-Q. Check if the Sentence Is Pangram
+Q. Check if the Sentence Is Pangram--------
 
 class Solution {
 public:
@@ -2565,3 +2565,5 @@ public:
     }
 };
 ----------------------------------------
+
+Q.   Minimum Insertions to Balance a Parentheses String --------
