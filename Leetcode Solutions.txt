@@ -2622,3 +2622,5 @@ public:
     }
 };
 ---------------------------------------------
+
+Q.   Maximum Candies Allocated to K Children ---------
