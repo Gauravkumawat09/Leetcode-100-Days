@@ -2848,3 +2848,18 @@ public:
 -------------------------------------------
 
 || *Day-90* || 
+
+Q. Minimum Value to Get Positive Step by Step Sum ---------
+
+class Solution {
+public:
+    int minStartValue(vector<int>& nums) {
+        int ans = 0;
+        int sum = 0;
+        for(auto it : nums){
+            sum += it;
+            ans = min(ans,sum);
+        }
+        return -ans + 1;
+    }
+};
