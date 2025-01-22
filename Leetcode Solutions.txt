@@ -2884,3 +2884,5 @@ Q. Maximum 69 Number -------
         int ans = num + (3 * pow(10, rightCount));
         return ans;
 -------------------------------------------------
+
+Q. Number of Students Unable to Eat Lunch  --------
