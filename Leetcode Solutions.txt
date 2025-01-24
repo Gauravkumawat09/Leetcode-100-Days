@@ -2936,3 +2936,18 @@ public:
 
 Q.  Sum of Squares of Special Elements  --------
 
+class Solution {
+public:
+    int sumOfSquares(vector<int>& nums) {
+        int total = 0;
+        int n = nums.size();
+        for(int i=1;i<=n;i++){
+            int val = nums[i-1];
+            if(n%i==0){
+                total += val*val;
+            }
+        }
+        return total;
+    }
+};
+
