@@ -2932,3 +2932,5 @@ public:
 };
 ----------------------------------------------
 
+Q.  Sum of Squares of Special Elements  --------
+
