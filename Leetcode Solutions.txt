@@ -2953,6 +2953,19 @@ public:
 -------------------------------------------
 
 Q.  Intersection of Two Arrays  -------
+
+class Solution {
+public:
+    vector<int> intersection(vector<int>& nums1, vector<int>& nums2) {
+        unordered_set<int>ans(nums1.begin(),nums1.end());
+        unordered_set<int>result;
+        for(int i : nums2){
+            if(ans.find(i) != ans.end()) 
+            result.insert(i);
+        }
+        return vector<int>(result.begin(),result.end());
+    }
+};
 || *Day-95* || 
 
 Q.  Time Needed to Buy Tickets -------
