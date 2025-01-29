@@ -3036,3 +3036,5 @@ public:
     }
 };
 -------------------------------------------
+
+Q.  Check Distances Between Same Letters ---------
