@@ -3040,3 +3040,21 @@ public:
 || *Day-99* ||
 
 Q.  Check Distances Between Same Letters ---------
+
+class Solution {
+public:
+    bool checkDistances(string s, vector<int>& distance) {
+        for (int i = 0; i < s.length(); i++) {
+            char current = s[i];  
+            for (int j = i + 1; j < s.length(); j++) {
+                if (current == s[j]) {  
+                    int DB = j - i - 1;  
+                    if (DB != distance[current - 'a']) { 
+                        return false; 
+                    }
+                }
+            }
+        }
+        return true; 
+    }
+};
