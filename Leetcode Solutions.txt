@@ -3249,3 +3249,5 @@ public:
 ------------------------------------------
 
 Day 106
+
+Q.  Find the Longest Equal Subarray -----
