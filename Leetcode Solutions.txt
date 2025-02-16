@@ -3128,11 +3128,6 @@ public:
 
 
 
-Jan - 4 leetcode link sheet
-
-https://classroom.google.com/c/NzM1ODM0OTgwODg4/a/NzMzNTI4NzUzMzA5/details
-
-
 Day-101
 
 Q. Number of Distinct Averages --------
